@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym/screen/homepage.dart';
+import 'package:flutter_gym/screen/settings.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -89,12 +90,12 @@ class _LoginPageState extends State<LoginPage> {
                               hintText: 'Username',
                               focusedBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.grey.shade200),
+                                BorderSide(color: Colors.grey.shade200),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.grey.shade200),
+                                BorderSide(color: Colors.grey.shade200),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                             ),
@@ -111,12 +112,12 @@ class _LoginPageState extends State<LoginPage> {
                               hintText: 'Password',
                               focusedBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.grey.shade200),
+                                BorderSide(color: Colors.grey.shade200),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               enabledBorder: OutlineInputBorder(
                                 borderSide:
-                                    BorderSide(color: Colors.grey.shade200),
+                                BorderSide(color: Colors.grey.shade200),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                             ),
@@ -125,15 +126,15 @@ class _LoginPageState extends State<LoginPage> {
                             height: 20,
                           ),
                           SizedBox(
-                            width: double
-                                .infinity, // Make the button take the full width
+                            width: double.infinity,
                             child: ElevatedButton(
                               onPressed: () {
                                 Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) =>
-                                            const HomePage()));
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const HomePage(),
+                                  ),
+                                );
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.black,
@@ -141,10 +142,12 @@ class _LoginPageState extends State<LoginPage> {
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
                               ),
-                              child: const Text("Login",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                  )),
+                              child: const Text(
+                                "Login",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
                             ),
                           ),
                         ],

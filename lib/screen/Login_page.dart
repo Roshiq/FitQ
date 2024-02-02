@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym/screen/homepage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -30,7 +31,9 @@ class _LoginPageState extends State<LoginPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(width: 7,),
+                  SizedBox(
+                    width: 7,
+                  ),
                   Padding(
                     padding: EdgeInsets.symmetric(vertical: 10),
                     child: Text(
@@ -44,13 +47,12 @@ class _LoginPageState extends State<LoginPage> {
                   )
                 ],
               ),
-
               Align(
-                alignment:  Alignment.bottomCenter,
+                alignment: Alignment.bottomCenter,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Container(
-                    width:MediaQuery.of(context).size.width/1.19,
+                    width: MediaQuery.of(context).size.width / 1.19,
                     decoration: BoxDecoration(
                       boxShadow: [
                         BoxShadow(
@@ -64,7 +66,8 @@ class _LoginPageState extends State<LoginPage> {
                       borderRadius: BorderRadius.circular(13),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.only(bottom: 60, left: 20, right: 20),
+                      padding: const EdgeInsets.only(
+                          bottom: 60, left: 20, right: 20),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -75,8 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                               style: TextStyle(
                                   fontSize: 21,
                                   fontWeight: FontWeight.w400,
-                                  color: Colors.black
-                              ),
+                                  color: Colors.black),
                             ),
                           ),
                           TextField(
@@ -86,16 +88,20 @@ class _LoginPageState extends State<LoginPage> {
                               fillColor: Colors.grey.shade200,
                               hintText: 'Username',
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.grey.shade200),
+                                borderSide:
+                                    BorderSide(color: Colors.grey.shade200),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.grey.shade200),
+                                borderSide:
+                                    BorderSide(color: Colors.grey.shade200),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                             ),
                           ),
-                          const SizedBox(height: 20,),
+                          const SizedBox(
+                            height: 20,
+                          ),
                           TextField(
                             focusNode: _focusNode1,
                             obscureText: true,
@@ -104,21 +110,30 @@ class _LoginPageState extends State<LoginPage> {
                               fillColor: Colors.grey.shade200,
                               hintText: 'Password',
                               focusedBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.grey.shade200),
+                                borderSide:
+                                    BorderSide(color: Colors.grey.shade200),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                               enabledBorder: OutlineInputBorder(
-                                borderSide: BorderSide(color: Colors.grey.shade200),
+                                borderSide:
+                                    BorderSide(color: Colors.grey.shade200),
                                 borderRadius: BorderRadius.circular(20.0),
                               ),
                             ),
                           ),
-                          const SizedBox(height: 20,),
+                          const SizedBox(
+                            height: 20,
+                          ),
                           SizedBox(
-                            width: double.infinity, // Make the button take the full width
+                            width: double
+                                .infinity, // Make the button take the full width
                             child: ElevatedButton(
-                              onPressed: (){
-                                // Navigator.push(context, MaterialPageRoute(builder: (context) =>const SelectDistributor() ,));
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const HomePage()));
                               },
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.black,
@@ -126,8 +141,10 @@ class _LoginPageState extends State<LoginPage> {
                                   borderRadius: BorderRadius.circular(20.0),
                                 ),
                               ),
-                              child: const Text("Login",style: TextStyle(color: Colors.white,
-                              )),
+                              child: const Text("Login",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  )),
                             ),
                           ),
                         ],

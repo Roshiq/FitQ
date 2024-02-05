@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym/screen/settings.dart';
+import 'package:flutter_gym/screen/students.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -41,58 +43,69 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
+                        child: GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const Settings(),));
+                          },
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.settings,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Settings",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.settings,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Settings",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
                             ),
                           ),
                         ),
                       ),
                       Padding(
                         padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
+                        child: GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const Students(),));
+
+                          },
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.add_reaction_sharp,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Students",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.add_reaction_sharp,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Students",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
                             ),
                           ),
                         ),

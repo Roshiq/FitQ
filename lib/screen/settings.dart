@@ -40,14 +40,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -62,15 +60,13 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
 
-                    ),
                   ),
                 ),
               ),
@@ -85,14 +81,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -107,14 +101,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -150,14 +142,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -172,15 +162,13 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
 
-                    ),
                   ),
                 ),
               ),
@@ -195,14 +183,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -217,14 +203,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -259,14 +243,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -281,15 +263,13 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
 
-                    ),
                   ),
                 ),
               ),
@@ -304,14 +284,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -326,14 +304,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 45,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),
@@ -348,14 +324,12 @@ class _SettingsState extends State<Settings> {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: SizedBox(
                 height: 70,
-                child: Expanded(
-                  child: TextField(
-                    obscureText: true,
-                    decoration: InputDecoration(
-                      filled: true,
-                      fillColor: Colors.white,
-                      border: OutlineInputBorder(),
-                    ),
+                child: TextField(
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Colors.white,
+                    border: OutlineInputBorder(),
                   ),
                 ),
               ),

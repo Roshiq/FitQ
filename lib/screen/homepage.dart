@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym/screen/payments.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -39,122 +40,70 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
+                      InkWell(
+                        onTap: (){
+
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.settings,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Settings",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
-                            ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.add_reaction_sharp,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Students",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.settings,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Settings",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
+                      InkWell(
+                        onTap: (){
+
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.payments,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Payments",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
-                            ),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
-                            ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.drafts_rounded,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Payment Due",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.add_reaction_sharp,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Students",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
                             ),
                           ),
                         ),
@@ -163,60 +112,74 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => const PaymentScreen()
+                                            ));
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.my_library_books_sharp,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Attendance",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.payments,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Payments",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
+                      InkWell(
+                        onTap: (){
+
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.settings_accessibility_outlined,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "P T",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.drafts_rounded,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Payment Due",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
                             ),
                           ),
                         ),
@@ -225,60 +188,140 @@ class _HomePageState extends State<HomePage> {
                   ),
                   Row(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
+                      InkWell(
+                        onTap: () {
+                          
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.pie_chart_sharp,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Utils",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.my_library_books_sharp,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Attendance",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(5.0),
-                        child: Container(
-                          width: 150,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            color: Colors.orange,
-                            borderRadius: BorderRadius.circular(10.0),
-                          ),
-                          child: const Padding(
-                            padding: EdgeInsets.only(
-                              top: 40,
+                      InkWell(
+                        onTap: () {
+                          
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
                             ),
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Column(children: [
-                                Icon(
-                                  Icons.logout_outlined,
-                                  size: 45,
-                                ),
-                                Text(
-                                  "Log out",
-                                  style: TextStyle(fontSize: 15),
-                                )
-                              ]),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.settings_accessibility_outlined,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "P T",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      InkWell(
+                        onTap: () {},
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.pie_chart_sharp,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Utils",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.all(5.0),
+                          child: Container(
+                            width: 150,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              color: Colors.orange,
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            child: const Padding(
+                              padding: EdgeInsets.only(
+                                top: 40,
+                              ),
+                              child: Align(
+                                alignment: Alignment.center,
+                                child: Column(children: [
+                                  Icon(
+                                    Icons.logout_outlined,
+                                    size: 45,
+                                  ),
+                                  Text(
+                                    "Log out",
+                                    style: TextStyle(fontSize: 15),
+                                  )
+                                ]),
+                              ),
                             ),
                           ),
                         ),

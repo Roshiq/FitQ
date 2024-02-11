@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gym/screen/widget_buttons.dart';
 
 class Students extends StatefulWidget {
   const Students({Key? key}) : super(key: key);
@@ -16,7 +17,7 @@ class _StudentsState extends State<Students> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           const SizedBox(height: 80),
-          Text(
+          const Text(
             "FitQue",
             style: TextStyle(
               color: Colors.white,
@@ -24,13 +25,13 @@ class _StudentsState extends State<Students> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 10),
+        const SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              _buildCategoryButton("Active"),
-              _buildCategoryButton("Inactive"),
-              _buildAddButton(),
+              Button.buildCategoryButton("Active"),
+              Button.buildCategoryButton("Inactive"),
+              Button.buildAddButton(),
             ],
           ),
           const SizedBox(height: 10),
@@ -136,51 +137,5 @@ class _StudentsState extends State<Students> {
     );
   }
 
-  Widget _buildCategoryButton(String text) {
-    return Container(
-      height: 50,
-      width: 100,
-      decoration: BoxDecoration(
-        color: Colors.orange,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Center(
-        child: Text(
-          text,
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildAddButton() {
-    return Container(
-      height: 50,
-      width: 100,
-      decoration: BoxDecoration(
-        color: Colors.orange,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            "Add",
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
-            ),
-          ),
-          const SizedBox(width: 5),
-          Icon(
-            Icons.add,
-            size: 18,
-          ),
-        ],
-      ),
-    );
-  }
+  
 }

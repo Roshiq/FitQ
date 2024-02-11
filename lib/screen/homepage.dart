@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gym/screen/payments.dart';
+import 'package:flutter_gym/screen/settings.dart';
+import 'package:flutter_gym/screen/students.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -41,8 +43,12 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     children: [
                       InkWell(
-                        onTap: (){
-
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Settings(),
+                              ));
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -75,8 +81,12 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       InkWell(
-                        onTap: (){
-
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const Students(),
+                              ));
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -115,10 +125,9 @@ class _HomePageState extends State<HomePage> {
                       InkWell(
                         onTap: () {
                           Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => const PaymentScreen()
-                                            ));
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const PaymentScreen()));
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
@@ -151,9 +160,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       InkWell(
-                        onTap: (){
-
-                        },
+                        onTap: () {},
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
                           child: Container(
@@ -189,9 +196,7 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     children: [
                       InkWell(
-                        onTap: () {
-                          
-                        },
+                        onTap: () {},
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
                           child: Container(
@@ -223,9 +228,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       InkWell(
-                        onTap: () {
-                          
-                        },
+                        onTap: () {},
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
                           child: Container(
@@ -293,9 +296,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       InkWell(
-                        onTap: () {
-                          
-                        },
+                        onTap: () {},
                         child: Padding(
                           padding: const EdgeInsets.all(5.0),
                           child: Container(
